@@ -48,8 +48,8 @@ jobs:
       # fazer o push do repositório no github
       - name: Push
         uses: ad-m/github-push-action@master
-        with: 
-          github_token: {{ secrets.GITHUB_TOKEN }} # token padrão 
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }} 
           repository: https://github.com/barafaskt/gitops-argocd
       
 
