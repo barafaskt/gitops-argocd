@@ -50,7 +50,7 @@ jobs:
         uses: ad-m/github-push-action@master
         with: 
           github_token: secret.{{ secret.GITHUB_TOKEN }} # token padrão 
-          repository: barafaskt/gitops-argocd
+          repository: https://github.com/barafaskt/gitops-argocd
       
 
 
