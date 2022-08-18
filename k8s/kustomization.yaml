@@ -3,11 +3,14 @@ kind: Kustomization
 
 # quando o kustomize for customizar, vai ser os seguintes recursos abaixo
 resources:
-  - deployment.yaml
-  - service.yaml
+- deployment.yaml
+- service.yaml
 
 # o que vai ser customizado 
-images: 
-- name: go-server # antiga imagem
-  newName: barafaskt/go-gitops  # nova imagem
-  newTag: qualquerTag # nova tag | vamos mudar com a action do github actions
+images:
+- name: go-server
+  newName: barafaskt/go-gitops
+  newTag: qualquerTag
+- name: goserver
+  newName: barafaskt/gitops-argocd
+  newTag: 2a16ac6ff728abfe17bd4de6aa0b7be611971711
